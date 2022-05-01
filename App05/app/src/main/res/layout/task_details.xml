@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="任务详情"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <!--标题-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="标题："
+            android:textColor="@color/black"
+            android:letterSpacing="0.8"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/td_topic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#09f"
+            android:background="@drawable/edittext_border"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!--执行时间-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="执行时间："
+            android:textColor="@color/black"
+            android:letterSpacing="0.1"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border">
+            <TextView
+                android:id="@+id/td_doTime"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:textColor="#f00"
+                android:textSize="22sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--发布时间-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="发布时间："
+            android:textColor="@color/black"
+            android:letterSpacing="0.1"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/td_showTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_border"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!--最新修改-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="最新修改："
+            android:textColor="@color/black"
+            android:letterSpacing="0.1"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/td_updateTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:letterSpacing="0.5"
+            android:background="@drawable/edittext_border"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!--    详细内容-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细内容"
+            android:textColor="@color/black"
+            android:letterSpacing="0.1"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/td_detail"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_border"
+            android:minLines="5"
+            android:gravity="top"/>
+
+    </LinearLayout>
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/td_btnBack"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返回"
+            android:textSize="26sp"/>
+        <Button
+            android:id="@+id/td_btnUpdate"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="修改"
+            android:textSize="26sp"/>
+
+        <Button
+            android:id="@+id/td_btnDelete"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textSize="26sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

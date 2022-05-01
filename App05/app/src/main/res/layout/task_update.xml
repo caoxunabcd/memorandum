@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改任务"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+
+    <!--  标题  -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:letterSpacing="1"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/tu_money"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <!-- 截止时间-->
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="执行时间"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:letterSpacing="0.1"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/tu_time"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/tu_btnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择时间"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+    <!-- 详细内容 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细内容"
+            android:textColor="@color/black"
+            android:letterSpacing="0.1"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/tu_detailsUse"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_border"
+            android:minLines="3"
+            android:gravity="top"/>
+
+    </LinearLayout>
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tu_btnBack"
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返回"
+            android:textSize="26sp"/>
+
+        <Button
+            android:id="@+id/tu_btnUpdate"
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认修改"
+            android:textSize="26sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
